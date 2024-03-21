@@ -1,0 +1,15 @@
+{
+  "itemgroup.seasonings": "Seasonings",
+  "itemgroup.ingredients": "Ingredients",
+  "itemgroup.unprocessed_ingredients": "Ingredient Components",
+
+  "item.projectcookbook.ground_salt": "Ground Salt",
+  "item.projectcookbook.bottled_salt": "Bottled Salt",
+
+
+  "item.projectcookbook.unprocessed_butter": "Butter Grains",
+  "item.projectcookbook.rinsed_butter": "Churned Butter",
+  "item.projectcookbook.butter": "Un Salted Butter",
+  "item.projectcookbook.salted_butter": "Salted Butter",
+  "item.projectcookbook.herb_butter": "Herb Infused Butter"
+}

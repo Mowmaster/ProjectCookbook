@@ -1,5 +1,7 @@
 package com.mowmaster.projectcookbook;
 
+import com.mowmaster.projectcookbook.registry.CreativeTabGroup;
+import com.mowmaster.projectcookbook.registry.ItemRegistry;
 import com.mowmaster.projectcookbook.util.References;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,10 +16,8 @@ public class ProjectCookbook implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		CreativeTabGroup.registerItemGroups();
+		ItemRegistry.registerModItems();
 	}
 }
