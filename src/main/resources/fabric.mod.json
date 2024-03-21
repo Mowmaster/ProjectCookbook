@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "projectcookbook",
+	"version": "${version}",
+	"name": "Project Cookbook",
+	"description": "Adds custom placeable foods with somewhat complex recipes",
+	"authors": [
+		"Mowmaster"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/channel/UCjgYo6KXrb9aVYPr6bfCmkQ",
+		"sources": "https://github.com/Mowmaster/ProjectCookbook/tree/Fabric-1.20"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/projectcookbook/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mowmaster.projectcookbook.ProjectCookbook"
+		],
+		"client": [
+			"com.mowmaster.projectcookbook.ProjectCookbookClient"
+		],
+		"fabric-datagen": [
+			"com.mowmaster.projectcookbook.ProjectCookbookDataGenerator"
+		]
+	},
+	"mixins": [
+		"projectcookbook.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
