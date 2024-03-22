@@ -33,6 +33,9 @@ public class ItemRegistry
     public static final Item ITEM_CROP_SEED = registerItem("crop_seed",
             new AliasedBlockItem(BlockRegistry.CROP_BLOCK, new FabricItemSettings()));
 
+    public static final Item ITEM_DOUBLE_CROP_SEED = registerItem("double_crop_seed",
+            new AliasedBlockItem(BlockRegistry.DOUBLE_CROP_BLOCK, new FabricItemSettings()));
+
 
     private static Item registerItem(String name, Item item)
     {

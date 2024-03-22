@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "projectcookbook:block/doublecrop/corn_crop_stage0"
+  }
+}

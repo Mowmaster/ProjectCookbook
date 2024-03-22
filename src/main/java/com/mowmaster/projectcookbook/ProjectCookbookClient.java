@@ -10,5 +10,6 @@ public class ProjectCookbookClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.CROP_BLOCK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.DOUBLE_CROP_BLOCK, RenderLayer.getCutout());
     }
 }

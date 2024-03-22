@@ -3,6 +3,7 @@ package com.mowmaster.projectcookbook.registry;
 import com.mowmaster.projectcookbook.ProjectCookbook;
 import com.mowmaster.projectcookbook.block.BaseFoodBlock;
 import com.mowmaster.projectcookbook.block.crops.BaseCropBlock;
+import com.mowmaster.projectcookbook.block.crops.BaseDoubleCropBlock;
 import com.mowmaster.projectcookbook.util.References;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -28,6 +29,9 @@ public class BlockRegistry
 
     public static final Block CROP_BLOCK = Registry.register(Registries.BLOCK, new Identifier(References.MODID, "block_crop"),
             new BaseCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+    public static final Block DOUBLE_CROP_BLOCK = Registry.register(Registries.BLOCK, new Identifier(References.MODID, "block_double_crop"),
+            new BaseDoubleCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
 
     private static Block registerBlock(String name, Block block) {

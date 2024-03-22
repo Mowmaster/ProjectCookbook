@@ -17,6 +17,7 @@ public class CreativeTabGroup
                     .icon(() -> new ItemStack(ItemRegistry.ITEM_CROP_SEED))
                     .entries((displayContext, entries) -> {
                         entries.add(ItemRegistry.ITEM_CROP_SEED);
+                        entries.add(ItemRegistry.ITEM_DOUBLE_CROP_SEED);
                     })
                     .build());
 
