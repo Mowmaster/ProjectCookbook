@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "projectcookbook:block/block_salt"
+    }
+  }
+}

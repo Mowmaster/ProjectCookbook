@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "projectcookbook:block/block_butter"
+    },
+    "bites=1": {
+      "model": "projectcookbook:block/butter_slice1"
+    },
+    "bites=2": {
+      "model": "projectcookbook:block/butter_slice2"
+    },
+    "bites=3": {
+      "model": "projectcookbook:block/butter_slice3"
+    },
+    "bites=4": {
+      "model": "projectcookbook:block/butter_slice4"
+    },
+    "bites=5": {
+      "model": "projectcookbook:block/butter_slice5"
+    },
+    "bites=6": {
+      "model": "projectcookbook:block/butter_slice6"
+    }
+  }
+}

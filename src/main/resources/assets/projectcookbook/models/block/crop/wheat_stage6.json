@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "projectcookbook:block/crop/wheat_stage6"
+  }
+}

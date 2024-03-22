@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "projectcookbook:block/butter_side",
+        "bottom": "projectcookbook:block/butter_bottom",
+        "top": "projectcookbook:block/butter_top",
+        "side": "projectcookbook:block/butter_side",
+        "inside": "projectcookbook:block/butter_inner"
+    },
+    "elements": [
+        {   "from": [ 9, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

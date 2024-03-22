@@ -7,6 +7,7 @@ import com.mowmaster.projectcookbook.util.References;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -29,7 +30,8 @@ public class ItemRegistry
     public static final Item ITEM_SEASONED_SALT_BUTTER = registerItem("salted_butter", new BaseItem(new FabricItemSettings()));
     public static final Item ITEM_SEASONED_HERB_BUTTER = registerItem("herb_butter", new BaseItem(new FabricItemSettings()));
 
-
+    public static final Item ITEM_CROP_SEED = registerItem("crop_seed",
+            new AliasedBlockItem(BlockRegistry.CROP_BLOCK, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item)

@@ -12,12 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class CreativeTabGroup
 {
-    public static final ItemGroup SEASONINGS_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(References.MODID,"seasonings_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.seasonings"))
-                    .icon(() -> new ItemStack(ItemRegistry.ITEM_GROUND_SALT))
+    public static final ItemGroup RAW_INGREDIENTS_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(References.MODID,"raw_ingredients_group"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.raw_ingredients"))
+                    .icon(() -> new ItemStack(ItemRegistry.ITEM_CROP_SEED))
                     .entries((displayContext, entries) -> {
-                        entries.add(ItemRegistry.ITEM_GROUND_SALT);
-                        entries.add(ItemRegistry.ITEM_SEASONED_HERB_BUTTER);
+                        entries.add(ItemRegistry.ITEM_CROP_SEED);
                     })
                     .build());
 
@@ -37,6 +36,24 @@ public class CreativeTabGroup
                     .entries((displayContext, entries) -> {
                         entries.add(ItemRegistry.ITEM_UNPROCESSED_BUTTER);
                         entries.add(ItemRegistry.ITEM_RINSED_BUTTER);
+                    })
+                    .build());
+
+    public static final ItemGroup STORAGE_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(References.MODID,"storage_block_group"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.storage_block"))
+                    .icon(() -> new ItemStack(BlockRegistry.SALT_BLOCK))
+                    .entries((displayContext, entries) -> {
+                        entries.add(BlockRegistry.BUTTER_BLOCK);
+                        entries.add(BlockRegistry.SALT_BLOCK);
+                    })
+                    .build());
+
+    public static final ItemGroup SEASONINGS_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(References.MODID,"seasonings_group"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.seasonings"))
+                    .icon(() -> new ItemStack(ItemRegistry.ITEM_GROUND_SALT))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ItemRegistry.ITEM_GROUND_SALT);
+                        entries.add(ItemRegistry.ITEM_SEASONED_HERB_BUTTER);
                     })
                     .build());
 

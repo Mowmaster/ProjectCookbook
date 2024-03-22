@@ -1,5 +1,6 @@
 package com.mowmaster.projectcookbook;
 
+import com.mowmaster.projectcookbook.registry.BlockRegistry;
 import com.mowmaster.projectcookbook.registry.CreativeTabGroup;
 import com.mowmaster.projectcookbook.registry.ItemRegistry;
 import com.mowmaster.projectcookbook.util.References;
@@ -19,5 +20,6 @@ public class ProjectCookbook implements ModInitializer {
 
 		CreativeTabGroup.registerItemGroups();
 		ItemRegistry.registerModItems();
+		BlockRegistry.registerModBlocks();
 	}
 }
