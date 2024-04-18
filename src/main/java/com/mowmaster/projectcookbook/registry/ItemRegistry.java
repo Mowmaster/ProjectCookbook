@@ -17,18 +17,23 @@ import net.minecraft.util.Identifier;
 public class ItemRegistry
 {
     public static final FoodComponent FOOD_GROUND_SALT = new FoodComponent.Builder().hunger(1).saturationModifier(0.25f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.LUCK, 200), 0.25f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 20), 0.5f).build();
     public static final FoodComponent FOOD_BOTTLED_SALT = new FoodComponent.Builder().hunger(1).saturationModifier(0.25f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.25f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 20), 0.5f).build();
+
+    public static final FoodComponent FOOD_UNPROCESSED_BUTTER = new FoodComponent.Builder().hunger(1).saturationModifier(0.25f).build();
+    public static final FoodComponent FOOD_RINSED_BUTTER = new FoodComponent.Builder().hunger(1).saturationModifier(0.25f).build();
+    public static final FoodComponent FOOD_BUTTER = new FoodComponent.Builder().hunger(1).saturationModifier(0.5f).build();
+    public static final FoodComponent FOOD_SEASONED_SALT_BUTTER = new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).build();
 
     public static final Item ITEM_GROUND_SALT = registerItem("ground_salt", new BaseItem(new FabricItemSettings().food(FOOD_GROUND_SALT)));
     public static final Item ITEM_BOTTLED_SALT = registerItem("bottled_salt", new BaseDrinkableItem(new FabricItemSettings().food(FOOD_BOTTLED_SALT)));
 
-    public static final Item ITEM_UNPROCESSED_BUTTER = registerItem("unprocessed_butter", new BaseItem(new FabricItemSettings()));
-    public static final Item ITEM_RINSED_BUTTER = registerItem("rinsed_butter", new BaseItem(new FabricItemSettings()));
-    public static final Item ITEM_BUTTER = registerItem("butter", new BaseItem(new FabricItemSettings()));
-    public static final Item ITEM_SEASONED_SALT_BUTTER = registerItem("salted_butter", new BaseItem(new FabricItemSettings()));
-    public static final Item ITEM_SEASONED_HERB_BUTTER = registerItem("herb_butter", new BaseItem(new FabricItemSettings()));
+    public static final Item ITEM_UNPROCESSED_BUTTER = registerItem("unprocessed_butter", new BaseItem(new FabricItemSettings().food(FOOD_UNPROCESSED_BUTTER)));
+    public static final Item ITEM_RINSED_BUTTER = registerItem("rinsed_butter", new BaseItem(new FabricItemSettings().food(FOOD_RINSED_BUTTER)));
+    public static final Item ITEM_BUTTER = registerItem("butter", new BaseItem(new FabricItemSettings().food(FOOD_BUTTER)));
+    public static final Item ITEM_SEASONED_SALT_BUTTER = registerItem("salted_butter", new BaseItem(new FabricItemSettings().food(FOOD_SEASONED_SALT_BUTTER)));
+    //public static final Item ITEM_SEASONED_HERB_BUTTER = registerItem("herb_butter", new BaseItem(new FabricItemSettings()));
 
     public static final Item ITEM_CROP_SEED = registerItem("crop_seed",
             new AliasedBlockItem(BlockRegistry.CROP_BLOCK, new FabricItemSettings()));

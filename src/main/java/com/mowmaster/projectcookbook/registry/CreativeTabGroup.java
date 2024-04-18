@@ -54,7 +54,7 @@ public class CreativeTabGroup
                     .icon(() -> new ItemStack(ItemRegistry.ITEM_GROUND_SALT))
                     .entries((displayContext, entries) -> {
                         entries.add(ItemRegistry.ITEM_GROUND_SALT);
-                        entries.add(ItemRegistry.ITEM_SEASONED_HERB_BUTTER);
+                        //entries.add(ItemRegistry.ITEM_SEASONED_HERB_BUTTER);
                     })
                     .build());
 

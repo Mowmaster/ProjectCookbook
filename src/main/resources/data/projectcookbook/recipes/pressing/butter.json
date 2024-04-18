@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "projectcookbook:rinsed_butter"
+    }
+  ],
+  "results": [
+    {
+      "item": "projectcookbook:butter"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "projectcookbook:butter"
+    },
+    {
+      "item": "projectcookbook:ground_salt"
+    }
+  ],
+  "results": [
+    {
+      "item": "projectcookbook:salted_butter"
+    }
+  ]
+}

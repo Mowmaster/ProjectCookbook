@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 20250,
+      "fluidTag": "c:milk",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "projectcookbook:unprocessed_butter"
+    }
+  ]
+}

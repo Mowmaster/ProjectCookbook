@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "projectcookbook:unprocessed_butter"
+    }
+  ],
+  "results": [
+    {
+      "item": "projectcookbook:rinsed_butter"
+    }
+  ]
+}
