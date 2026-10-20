@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "projectcookbook",
+  "ingredient": "projectcookbook:simplified_water",
+  "result": {
+    "id": "projectcookbook:basic_salt"
+  }
+}

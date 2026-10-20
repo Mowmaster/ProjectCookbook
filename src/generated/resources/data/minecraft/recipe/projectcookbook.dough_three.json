@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "projectcookbook:simplified_water",
+    "projectcookbook:sourdough_starter",
+    "projectcookbook:basic_salt",
+    "minecraft:sugar",
+    "projectcookbook:flour_wheat_whole",
+    "projectcookbook:flour_wheat_whole",
+    "projectcookbook:flour_wheat_whole"
+  ],
+  "result": {
+    "count": 3,
+    "id": "projectcookbook:dough_sourdough"
+  }
+}

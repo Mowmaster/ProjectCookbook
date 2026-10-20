@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dough_sourdough": {
+      "conditions": {
+        "items": [
+          {
+            "items": "projectcookbook:dough_sourdough"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "minecraft:bread_sourdough_from_smelting_dough_sourdough"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dough_sourdough"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bread_sourdough_from_smelting_dough_sourdough"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_simplified_water": {
+      "conditions": {
+        "items": [
+          {
+            "items": "projectcookbook:simplified_water"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "minecraft:basic_salt_from_smelting_simplified_water"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_simplified_water"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:basic_salt_from_smelting_simplified_water"
+    ]
+  }
+}

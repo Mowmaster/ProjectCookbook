@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "projectcookbook:bottle_sourdough_starter"
+  ],
+  "result": {
+    "id": "projectcookbook:sourdough_starter"
+  }
+}

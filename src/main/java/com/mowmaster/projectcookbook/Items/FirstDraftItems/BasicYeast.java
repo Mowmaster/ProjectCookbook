@@ -1,0 +1,34 @@
+package com.mowmaster.projectcookbook.Items.FirstDraftItems;
+
+import com.mowmaster.projectcookbook.Items.FirstDraftItemRegistry;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.*;
+import org.jspecify.annotations.Nullable;
+
+public class BasicYeast extends Item {
+    public BasicYeast(Properties properties) {
+        super(properties);
+    }
+
+    @Override
+    public @Nullable ItemStackTemplate getCraftingRemainder(ItemInstance instance) {
+        int currentDamage = instance.getOrDefault(DataComponents.DAMAGE,0);
+        currentDamage+=1;
+
+        int maxDamage = instance.getOrDefault(DataComponents.MAX_DAMAGE,0);
+        if(currentDamage>=maxDamage)
+        {
+            ItemStack glassbottle = new ItemStack(Items.GLASS_BOTTLE);
+            return ItemStackTemplate.fromNonEmptyStack(glassbottle);
+        }
+        else {
+            ItemStack damagedStack = new ItemStack(FirstDraftItemRegistry.FIRSTDRAFT_TOOL_YEAST_PRIMITIVE.get());
+
+            // 2. Set the desired damage value directly on the stack
+            damagedStack.setDamageValue(currentDamage);
+
+            // 3. Convert it into an immutable template container
+            return ItemStackTemplate.fromNonEmptyStack(damagedStack);
+        }
+    }
+}

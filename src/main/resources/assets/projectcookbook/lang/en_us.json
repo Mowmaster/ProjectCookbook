@@ -1,13 +1,11 @@
 {
-  "itemGroup.projectcookbook": "Example Mod Tab",
-  "block.projectcookbook.example_block": "Example Block",
-  "item.projectcookbook.example_item": "Example Item",
-
-  "projectcookbook.configuration.title": "ProjectCookbook Configs",
-  "projectcookbook.configuration.section.projectcookbook.common.toml": "ProjectCookbook Configs",
-  "projectcookbook.configuration.section.projectcookbook.common.toml.title": "ProjectCookbook Configs",
-  "projectcookbook.configuration.items": "Item List",
-  "projectcookbook.configuration.logDirtBlock": "Log Dirt Block",
-  "projectcookbook.configuration.magicNumberIntroduction": "Magic Number Text",
-  "projectcookbook.configuration.magicNumber": "Magic Number"
+  "itemGroup.projectcookbook": "Primitive Foods",
+  "item.projectcookbook.mortar_and_pestle": "Basic Mortar and Pestle",
+  "item.projectcookbook.flour_wheat_whole": "Course Whole Wheat Flour",
+  "item.projectcookbook.bottle_sourdough_starter": "Bottle Of Sourdough Starter",
+  "item.projectcookbook.sourdough_starter": "Sourdough Starter",
+  "item.projectcookbook.dough_sourdough": "Sourdough Dough",
+  "item.projectcookbook.simplified_water": "Bowl of Water",
+  "item.projectcookbook.basic_salt": "Salt",
+  "item.projectcookbook.bread_sourdough": "Sourdough Bread"
 }

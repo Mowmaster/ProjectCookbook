@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "projectcookbook:flour_wheat_whole",
+    "projectcookbook:simplified_water",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "projectcookbook:bottle_sourdough_starter"
+  }
+}
